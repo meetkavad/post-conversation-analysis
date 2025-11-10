@@ -4,7 +4,7 @@
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/<your-username>/derived-mind.git
+git clone https://github.com/meetkavad/post-conversation-analysis.git
 cd derived-mind
 ```
 

@@ -9,7 +9,6 @@ import re
 
 analyzer = SentimentIntensityAnalyzer()
 
-# configurable weights (can also be moved to settings.py)
 WEIGHTS = {
     "clarity": 0.18,
     "relevance": 0.18,
@@ -43,7 +42,7 @@ def analyze_conversation(conversation: Conversation) -> ConversationAnalysis:
     - normalized 0-10 scores and weighted overall_score
     - more robust fallback/empathy detection
     """
-    messages_qs = conversation.messages.order_by('id')  # assume insertion order or created_at
+    messages_qs = conversation.messages.order_by('id')  
     messages = list(messages_qs)
 
     # If there are zero messages, create a minimal analysis
