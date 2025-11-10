@@ -10,15 +10,15 @@ cd derived-mind
 
 ### 2. Create and Activate Virtual Environment
 ```
-pip install -r requirements.txt
-```
-
-### 3. Install Dependencies
-```
 python -m venv venv
 venv\Scripts\activate        # On Windows
 # or
 source venv/bin/activate     # On macOS/Linux
+```
+
+### 3. Install Dependencies
+```
+pip install -r requirements.txt
 ```
 
 ### 4. Run Database Migrations
